@@ -8,4 +8,4 @@ This repository is an ongoing project, and can and will be updated and changed r
 
 **CinderTrace-BulkScan** - This powershell script allows for bulk checking of IP reputation, using a .csv file and the AbuseIPDB python script. 
 
-**CinderAce** - A lightweight, fast powershell script designed for 1 off IP reputation checks. 
+**CinderAce** - A lightweight, fast powershell script designed for 1 off IP reputation checks. You will need to update the Python Path to the install directory for your machine. You can also simply copy and paste the Python executable to a easier to map location for use in the script. 
