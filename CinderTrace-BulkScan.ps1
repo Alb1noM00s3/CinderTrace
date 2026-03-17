@@ -1,16 +1,18 @@
 ﻿Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
 
-#Read-Host "Thank you for making use of my script. In order to ensure functionality, please ensure the requirements are satisfied: 1. Your file must be stored in the path of C:\PlayGround\ (The script checks for this path and creates it if it's not found.) Your file must be in .csv format, and the column name containing the IPs to check must be named 'IPs'. Press Enter to proceed."
-
 Write-Host "Thank you for choosing my script. Please ensure the following requirements are satisifed."
 
-Start-Sleep -Seconds 2.0
+Start-Sleep -Seconds 1.2
 
 Write-Host "Your File must be stored in C:\PlayGround. If this directory does not exist, the script will try to create it for you"
 
-Start-Sleep -Seconds 2.1
+Start-Sleep -Seconds .9
 
 Write-Host "The file type must be .csv, and the column containing the IPs must be named 'IPs' "
+
+Start-Sleep -Seconds .5
+
+Write-Host "By default, the script displays output in the console. The script can be modified to write results to a .txt file."
 
 $path = "C:\PlayGround\"
 
