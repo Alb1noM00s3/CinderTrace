@@ -22,7 +22,7 @@ If (!(Test-Path $path)) {
 $pythonPath = "python"
 $scriptPath = "C:\Python\AbuseIPdb.py"
 
-$csv = Read-Host -Prompt "Please name of .csv file to check"
+$csv = Read-Host -Prompt "Please enter the name of the .csv file containing the IPs to check"
 
 $ips = Import-Csv -Path "C:\PlayGround\$csv" | Select-Object -ExpandProperty IPs
 
