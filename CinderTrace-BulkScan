@@ -32,6 +32,8 @@ foreach ($ip in $ips) {
     $output = & $pythonPath $scriptPath $ip 2>&1
     $exit   = $LASTEXITCODE
     Write-Output $output
+## TO WRITE OUTPUT TO .TXT FILE, COMMENT OUT LINE 34 (Write-Output $output) AND REMOVE COMMENT OUT OF LINE BELOW.
+## Write-Output $output | Out-File -FilePath "C:\Playground\IpResults.txt" -Append
     if ($exit -ne 0) {
         Write-Warning "Python exited with code $exit for IP $ip"
     }
